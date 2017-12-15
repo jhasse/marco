@@ -1,0 +1,13 @@
+language: c
+dist: trusty
+sudo: false
+addons:
+  apt:
+    packages:
+      - mate-common
+      - yelp-tools
+      - libcanberra-gtk3-dev
+      - zenity
+script:
+  - ./autogen.sh
+  - make
